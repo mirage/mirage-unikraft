@@ -10,13 +10,12 @@ tags: ["org:mirage"]
 homepage: "https://github.com/mirage/mirage-unikraft"
 bug-reports: "https://github.com/mirage/mirage-unikraft/issues"
 depends: [
-  "ocaml"
+  "ocaml" {>= "5.3.0"}
   "dune" {>= "3.16"}
   "mirage-runtime"
-  "mirage-unix"
+  "mirage-sleep"
   "bheap"
   "lwt"
-  "cstruct"
   "metrics"
   "duration"
   "odoc" {with-doc}
